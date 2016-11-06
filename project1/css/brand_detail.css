@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*---------品牌索引栏----------s*/
+body {
+font-family:"微软雅黑", "华文细黑", sans-serif;
+}
+.brandmenu {
+width:1000px;
+height:35px;
+display:inline-block;
+font-size:14px;
+}
+
+#brandlabel{background-color:rgb(102,25,45);
+color:#FFF;
+padding:0 8px;
+font-family:"微软雅黑";
+font-size:15px;
+}
+
+.brandmenu li{
+float:left;
+text-align:center;
+line-height:35px;
+list-style-type:none;
+}
+
+.brandmenu li:hover {	
+background-color:rgb(102,25,45);
+color:#FFF;
+}
+
+.brandmenu li a {
+float: left;
+color:#000;
+text-decoration:none;
+font-family:"微软雅黑";
+padding: 0 13px;
+}
+
+.brandmenu li a:hover{background:rgb(102,25,45);color:#FFF}
+
+
+/*品牌介绍等*/
+.brand_detail .imgborder {width:200px; height:200px;
+float:left;
+padding-top:80px;}
+
+.brand_detail img{vertical-align:middle;
+max-height:200px;
+max-width:200px;}
+
+.brand_detail h1 {display: block;
+width:800px;
+height:80px;
+padding-top:20px;
+color:rgb(102,25,45);
+float: left;
+text-align:center;}
+
+.brand_detail .description{
+width:800px;
+float:left;
+font-size: 14px;
+line-height: 30px;
+text-indent:2em; /*大小需要调整*/
+/*margin之类的、字体之类的要不要*/
+}
+
+.func_hr {
+clear: both;
+height: 5px;
+border-bottom:1px solid;
+/*要不要margin-bottom一类的？*/
+}
+
+.products {margin:0 auto 0 150px  ;}
+.product{/*clear:both;*/float:left;width:400px;
+margin:10px 0;}
+
+.imgborder2{width:120px;
+height:150px;
+display:table-cell;
+vertical-align:middle;
+border:1px solid black;
+float:left;}
+
+.imgborder2 img{
+vertical-align:middle;
+max-height:150px;
+max-width:120px;}
+
+.product_des{float:left; margin-left:10px;}
+
+h2{color:rgb(102,25,45);
+line-height:35px;}
+
+.product_des ul li a{text-decoration:none;}
+
+.product_des ul li{list-style:none;}
+
+/*-----------后边产品明细需要搞-------------*/
+
+/*.products{
+margin-left:
+使之能够左对齐*
+

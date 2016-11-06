@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title> 气味图书馆</title>
+<script src="../../js/SpryMenuBar.js" type="text/javascript"></script>
+<link href="../../css/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<link href="../../css/main.css" rel="stylesheet" />
+<link href="../../css/brand_detail.css" rel="stylesheet" />
+</head>
+<!--开始写子页面时必读：
+1. 最后确定以后，每个人都不能再改变本压缩包的文件夹命名和文件名，否则会很麻烦
+2. 对于子页面的命名，每个人都必须严格遵照本导航中的页面命名，否则会很麻烦【尤其注意品牌名录的26个文件名。。。在下方被注释掉的表格里有体现】
+3. 香水图片、海报图片、瓶身图片等我们主要展示的图片请放在image文件夹【关于图片的命名参见上交的期中报告最终版，具体是形如香水名_品牌.jpg（png，jpeg...），务必保持命名统一，后期批量生成文件的时候还要用到，否则会很麻烦】，一些图标例如导航中的小小倒三角▽，放在icon文件夹里，否则会很麻烦
+4. 本页面的宽度限制为1008px，也就是wrapper块的宽度，请把所有的内容都放在最后一个</div>里面，以保证它们都被包括在里面
+5. 最后，每个人都不能私自改动这个文件，包括css文件，如果有需求就所有人一起改好了再写其他部分，我们必须保证整个全局导航部分一致
+6. 有什么技术上的困难，咱们再一起商量，推荐w3school.com.cn-->
+<body>
+<div id="wrapper"><!--这个是在外面包裹的一层，用来限制整个页面-->
+<div id="logopic">
+	<a href="../../index.html"><img src="../../image/logo.jpg" alt="perfumedaily" /></a>
+</div>
+<div id="searchform">
+	<form method="get" id="searchf" action="search.php"><!--only if we have this sort of thing...-->
+        <fieldset class="search">
+             <input type="text" class="box" name="s" id="s" class="inputText" placeholder="搜索品牌" x-webkit-speech>
+              <button type="submit" title="SEARCH"><a>搜索</a></button>
+        </fieldset>
+	</form>
+</div>
+	<div id="navi">
+		<ul id="MenuBar1" class="MenuBarHorizontal"><!--这一部分使用了spry框架的下拉菜单构件，经过了自己的简单修改，应该没有什么问题-->
+  			<li><a class="MenuBarItemSubmenu" href="../product/female.html">香水类型</a>
+    			<ul>
+      				<li><a href="../product/female.html">女士香水</a></li>
+      				<li><a href="../product/male.html">男士香水</a></li>
+      				<li><a href="../product/neutral.html">中性香水</a></li>
+      				<li><a href="../product/couple.html">情侣香水</a></li>
+    			</ul>
+  			</li>
+  			<li><a href="../brand/brand.html">品牌名录</a></li>
+  			<li><a href="../article/information.html">香水资讯</a></li>
+  			<li><a class="MenuBarItemSubmenu" href="../article/history.html">香水学堂</a>
+    			<ul>
+      				<li><a class="MenuBarItemSubmenu" href="../article/history.html">香水文化</a>
+        				<ul>
+          					<li><a href="../article/history.html">香水历史</a></li>
+          					<li><a href="../article/note.html">香调研究</a></li>
+        				</ul>
+      				</li>
+      				<li><a href="../article/situation1.html">使用场合</a></li>
+      				<li><a href="../article/attention.html">注意事项</a></li>
+					<li><a href="../article/craft.html">香水DIY</a></li>
+    			</ul>
+  			</li>
+  			<li><a class="MenuBarItemSubmenu" href="../error404.html">香水周边</a>
+  				<ul>
+    				<li><a href="../error404.html">香水海报</a></li>
+        			<li><a href="../error404.html">香水瓶身</a></li>
+    			</ul>
+  			</li>
+		</ul>
+	</div>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"icon/SpryMenuBarDownHover.gif", imgRight:"icon/SpryMenuBarRightHover.gif"});
+</script>
+<!--品牌索引菜单-->
+<!--到了详情界面，那么就不在是链接到自己页面的部分，而是链到其他网页部分-->
+<div class="brandmenu">
+	<ul> <!--attention！！下面是跳到另一个界面的一个部分-->
+    	<li id="brandlabel"> 品牌名录</li>
+        <li><a href="brand.html#brand_a">A</a></li>
+        <li><a href="brand.html#brand_b">B</a></li>
+        <li><a href="brand.html#brand_c">C</a></li>
+        <li><a href="brand.html#brand_d">D</a></li>
+        <li><a href="brand.html#brand_e">E</a></li>
+        <li><a href="brand.html#brand_f">F</a></li>
+        <li><a href="brand.html#brand_g">G</a></li>
+        <li><a href="brand.html#brand_h">H</a></li>
+        <li><a href="brand.html#brand_i">I</a></li>
+        <li><a href="brand.html#brand_j">J</a></li>
+        <li><a href="brand.html#brand_k">K</a></li>
+        <li><a href="brand.html#brand_l">L</a></li>
+        <li><a href="brand.html#brand_m">M</a></li>
+        <li><a href="brand.html#brand_n">N</a></li>
+        <li><a href="brand.html#brand_o">O</a></li>
+        <li><a href="brand.html#brand_p">P</a></li>
+        <li><a href="brand.html#brand_q">Q</a></li>
+        <li><a href="brand.html#brand_r">R</a></li>
+        <li><a href="brand.html#brand_s">S</a></li>
+        <li><a href="brand.html#brand_t">T</a></li>
+        <li><a href="brand.html#brand_u">U</a></li>
+        <li><a href="brand.html#brand_v">V</a></li>
+        <li><a href="brand.html#brand_w">W</a></li>
+        <li><a href="brand.html#brand_x">X</a></li>
+        <li><a href="brand.html#brand_y">Y</a></li>
+        <li><a href="brand.html#brand_z">Z</a></li>
+     </ul>
+     </div>
+        <div id="bread">
+        <a href="../../index.html">首页</a>
+        <span>》</span>
+        <a href="brand.html">品牌名录</a>
+       <span>》</span>
+        <a href="demeter.html">气味图书馆/Demeter</a>
+</div>
+<div class="brand_detail">
+    <div class="imgborder"><!--width\height-->
+    <img src="../../image/brand/Demeter.jpg" alt="气味图书馆" />
+    </div>
+    <h1> 气味图书馆/Demeter </h1> <!--居中颜色字体大小-->
+    <div class="description"><!--width\margin?-->
+    	<p>DEMETER香水是美国纽约的品牌，创立人是美国的两个大男生,他们拥有一座收集了800多种香味的香味图书馆，立志要以"串连香味与记忆"的方式来调制香水。两人的创作灵感来自生活，帮助别人找回遗忘的嗅觉记忆。气味图书馆是DEMETER香水在中国内地的总代理。其实叫"气味图书馆"那是有来历的，这个香水的品牌"Demeter"是由两个好玩的大男生Christopher Brosius和Christopher Gable，他们拥有一座收集了800多种香味的香味图书馆，立志要以"串连香味与记忆"的方式来调制香水。 Brosius喜欢把指甲涂成蓝色，Gable则高唱"把香水民主化"的论调，他们设计出来的香水常让人跌破眼镜、匪夷所思。来自美国的DEMETER要颠覆你对香水的看法，他们的创作灵感来自于生活之中，它能帮你找回遗忘已久的嗅觉记忆。DEMETER在2000年荣获香水大奖FiFi Awards颁发最具创意香氛。</p>
+     <p>Demeter香氛于1994 年正式在美国发售，由 Christopher Brosius 和 Christopher Gable 合力创办。 Christopher Brosius 经过多年在化妆品界不断致力研究新香水味而创制出 Demeter 香氛，共 9 个系列 — Nature 、 Flower 、 Sweets 、 Vegetable 、 Fruits 、 Drink (Tea &Coffee) 、 Drink (Juice) 、 Drink (Alcohol) 和 Life 。</p>
+  	<p>2000 、 2001 年， Demeter 的 "Pick-Me-Up-Snow" 荣获国际香水组织 The Fragrance Foundation 颁发 "U．S． Women′s Fragrance Star of the Year" 及 "U．S． Men′s Fragrance Star of the Year" ，这两项殊荣进一步印证了 DEMETER 的魅力。 Demeter 的 "Snow" 花了超过 5 年时间研制而成的。制作人忆起童年时在宾夕法尼亚洲乡村地方的纯白新雪的香味，他那把雪粒放进口中的那种回忆，透过 Snow 香水重现。 独特的 Demeter 在美国各地极受欢迎，连 Sharon Stone ( 莎朗斯通) 、 Kate Moss ( 凯特摩丝) 、 Cher ( 雪儿 ) 、 Drew Barrymore ( 珠儿巴莉摩 ) 、 Courteney Cox Arquette ( 科特尼 - 考克斯 - 阿奎特 ) 、 Uma Thurman ( 乌玛舒曼) 、 Stella McCartney 、名模 Tyra Banks 、 Clint Eastwood ( 克林伊斯威特 ) 和 Candice Bergen ( 肯蒂丝柏根 ) 等多位欧美红星和名模都深受其香气吸引。 DEMETER 的出现也席卷邻近的亚洲日本市场，不但改变了日本女性对香水的一贯概念，同时也获得了日本男性的认同。 Snow( 雪 ) 、 Rain( 雨 ) 、 Gingerale( 姜汁汽水 ) 、 Laundromat( 洗衣间 ) 及 Peach( 蜜桃 ) 这 5 款香氛 是日本杂志追捧的潮流人气产品。另外像是华人巨星张曼玉也特别钟情于Gin &Tonic ( 金汤尼 ) 酒香微醺带出有点暗示有点放电的诱人香氛。</p>
+<p></p>
+    </div>
+ <div class="func_hr"></div>
+ 
+<!--产品展示还没搞好-->
+ <div class="products">
+         <div class="product">
+             <a href="../product/neutral/dreamer_demeter.html" class="imgborder2"><img src="../../image/product/women/dreamer_demeter.jpg" alt="dreamer_demeter "/></a>
+            <div class="product_des">
+                <ul>
+                 	 <li><a href="../product/neutral/dreamer_demeter.html"><h2>dreamer_demeter</h2></a></li>
+					 <li>类型：中性香水</li>
+                	 <li>前调：鼠尾草、薰衣草、天竺葵</li>
+                     <li>中调：玫瑰、烟草</li>
+                     <li>后调：雪松、薰草豆</li>
+                     <li>浓度:Eau de toilette</li>
+                     <li>发行年：1996</li>
+                </ul>
+            </div>               
+        </div> 
+          <div class="product">
+             <a href="../product/neutral/puresoap_demeter.html" class="imgborder2"><img src="../../image/product/women/puresoap_demeter.jpg" alt="puresoap_demeter "/></a>
+            <div class="product_des">
+                <ul>
+                 	 <li><a href="../product/neutral/puresoap_demeter.html"><h2>puresoap_demeter</h2></a></li>
+					 <li>类型：</li>
+                	 <li>前调：</li>
+                     <li>中调：</li>
+                     <li>后调：</li>
+                     <li>浓度:Cologne</li>
+                     <li>发行年：</li>
+                </ul>
+            </div>               
+        </div> 
+          <div class="product">
+             <a href="../product/neutral/wet garden_demeter.html" class="imgborder2"><img src="../../image/product/women/wet garden_demeter.jpg" alt="wet garden_demeter "/></a>
+            <div class="product_des">
+                <ul>
+                 	 <li><a href="../product/neutral/wet garden_demeter.html"><h2>wet garden_demeter</h2></a></li>
+					 <li>类型：</li>
+                	 <li>前调：</li>
+                     <li>中调：</li>
+                     <li>后调：</li>
+                     <li>浓度:Cologne</li>
+                     <li>发行年：</li>
+                </ul>
+            </div>               
+        </div> 
+          <div class="product">
+             <a href="../product/neutral/sunshine_demeter.html" class="imgborder2"><img src="../../image/product/women/sunshine_demeter.jpg" alt="sunshine_demeter "/></a>
+            <div class="product_des">
+                <ul>
+                 	 <li><a href="../product/neutral/sunshine_demeter.html"><h2>sunshine_demeter</h2></a></li>
+					 <li>类型：</li>
+                	 <li>前调：</li>
+                     <li>中调：</li>
+                     <li>后调：</li>
+                     <li>浓度:Cologne</li>
+                     <li>发行年：</li>
+                </ul>
+            </div>               
+        </div> 
+          <div class="product">
+             <a href="../product/women/christmas tree_demeter.html" class="imgborder2"><img src="../../image/product/women/christmas tree_demeter.jpg" alt="christmas tree_demeter "/></a>
+            <div class="product_des">
+                <ul>
+                 	 <li><a href="../product/women/christmas tree_demeter.html"><h2>christmas tree_demeter</h2></a></li>
+					 <li>类型：</li>
+                	 <li>前调：</li>
+                     <li>中调：</li>
+                     <li>后调：</li>
+                     <li>浓度:Cologne</li>
+                     <li>发行年：</li>
+                </ul>
+            </div>               
+        </div> 
+          <div class="product">
+             <a href="../product/women/dragon fruit_demeter.html" class="imgborder2"><img src="../../image/product/women/dragon fruit_demeter.jpg" alt="dragon fruit_demeter "/></a>
+            <div class="product_des">
+                <ul>
+                 	 <li><a href="../product/women/dragon fruit_demeter.html"><h2>dragon fruit_demeter</h2></a></li>
+					 <li>类型：</li>
+                	 <li>前调：</li>
+                     <li>中调：</li>
+                     <li>后调：</li>
+                     <li>浓度:Cologne</li>
+                     <li>发行年：</li>
+                </ul>
+            </div>               
+        </div> 
+
+</div>
+
+<!--对应css-->
+
+
+
+
+</div>
+<div id="footer">
+  <ul>
+  	<li>娄丹：原型设计、数据收集、品牌展示页面设计与实现</li>
+    <li>丁震宇：数据收集</li>
+    <li>刘天祎：原型设计、数据收集、主页及产品展示页面设计与实现</li>
+  </ul>
+  <p>&copy; 2014《Web信息架构》课程 PerfumeDaily小组 版权所有</p>
+  </div>
+</div>
+</body>
+</html> 

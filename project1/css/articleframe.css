@@ -1,0 +1,118 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	font-family:"微软雅黑", "华文细黑", sans-serif;
+}
+
+#bread {
+	width:600px;
+	height:40px;
+	font-size:12px;
+	margin-top:20px;
+	margin:20px;
+}
+#bread a {
+	color:rgb(102,25,45);
+	text-decoration:none;
+}
+#bread a:hover {
+	color:#000;
+	text-decoration:underline;
+}
+#bread a:visited {
+	color:#aaa;
+	text-decoration:underline;
+}
+
+#article {
+	width:600px;
+	float:left;
+	text-align:left;
+	margin:30px 10px;
+}
+
+#readingrecomm {
+	width:340px;
+	float:left;
+	margin:20px 10px;
+}
+.recommlist {
+	width:300px;
+	margin:10px 10px;
+	height:80px;
+}
+#readingrecomm a {
+	text-decoration:none;
+	display:block;
+	width:300px;
+	float:left;
+}
+#readingrecomm a:hover {
+	text-decoration:underline;
+	display:block;
+}
+#readingrecomm a.title {
+	color:rgb(102,25,45);
+	font-size:12px;
+}
+
+#readingrecomm a.content {
+	color:#aaa;
+	font-size:10px;
+	overflow:hidden;
+	margin:10px 0px;
+	height:62px;
+	width:280px;
+}
+#friendlylink {
+	width:340px;
+	border:1px solid rgb(102 25,45);
+	float:left;
+	margin:20px 10px;
+}
+#friendlylink a {
+	text-decoration:none;
+	color:#000;
+	font-size:12px;
+	display:block;
+	margin:10px;
+}
+#friendlylink a:hover {
+	text-decoration:underline;
+	color:rgb(102,25,45);
+}
+h1 {
+	font-size:20px;
+	color:rgb(102,25,45);
+	margin:10px auto;
+}
+h2 {
+	font-size:16px;
+	color:rgb(102,25,45);
+}
+#pagenavi
+{
+	width:600px;
+	text-align:left;	
+}
+#pagenavi a {
+	text-decoration:none;
+	color:rgb(102,25,45);
+	font-size:14px;
+	line-height:24px;
+	display:block;
+	margin:10px auto;
+}
+#pagenavi a:hover {
+	text-decoration:underline;
+	color:#000;
+}
+#article p {
+	text-indent:2em;
+	font-size:14px;
+	line-height:24px;
+}
+p.annotation {
+	color:#aaa;
+	font-size:12px;
+}

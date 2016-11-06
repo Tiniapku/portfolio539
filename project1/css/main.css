@@ -1,0 +1,143 @@
+@charset "utf-8";
+/* CSS Document */
+/*-------------------------------global------------------*/
+* {
+	margin:0;
+	padding:0;
+	border:0;
+}
+@font-face {
+	font-family:"SentyTEA 新蒂下午茶体";
+	src:url(../font/SentyTEA.ttf) format("truetype");
+	
+}
+/*----------面包屑----------------*/
+#bread {
+	width:600px;
+	height:40px;
+	font-size:12px;
+	margin-top:20px;
+	margin:20px;
+}
+#bread a {
+	color:rgb(102,25,45);
+	text-decoration:none;
+}
+#bread a:hover {
+	color:#000;
+	text-decoration:underline;
+}
+#bread a:visited {
+	color:#aaa;
+	text-decoration:underline;
+}
+/*------------------------stucture--------------------------*/
+body {
+	text-align:center;
+}
+a:visited {
+	text-decoration:underline;
+}
+#wrapper {
+	width:1008px;
+	margin:0 auto;
+	text-align:left;
+}
+#logopic {
+	width:302px;
+	float:left;
+	height:80px;
+}
+#searchform {
+	width:706px;
+	float:left;
+	height:80px;
+	padding:30px 0 0 0;
+}
+fieldset.search {
+    padding: 0px;
+    border:none;
+    width: 232px;
+    margin:20px 0px 0px 461px;
+}
+.search input.box {
+    height: 28px;
+    width: 200;
+    margin-right: 0px;
+    padding-right: 0px;
+    margin: 1px;
+}
+.navigator {
+	width:197px;
+	float:left;
+	text-align:center;
+}
+.search button {
+	padding:5px 0px 0px 13px;
+}
+
+#footer {
+	width:1008px;
+	float:left;
+	}
+
+/*-----------------------layout-----------------------------*/
+#navi a {
+	font-weight:bold;
+	font-family:"微软雅黑", "华文细黑", sans-serif;
+}
+#navi a:hover,a:active
+{
+	text-decoration:underline;
+}
+
+fieldset.search {
+	background:rgb(102,25,45);
+}
+form#searchf {
+	width:232px;
+}
+fieldset.search:hover {
+    background: rgb(102,25,45);
+}
+.search input, .search button {
+    border: none;
+    float: left;
+	background:rgb(102,25,45);
+}
+.search button a
+{
+	display:block;
+	cursor:pointer;
+	font-family:"微软雅黑", "华文细黑", sans-serif;
+	font-size:16px;
+	background-color:rgb(102,25,45);
+	color:white;
+	text-decoration:none;
+}
+.search button a:hover
+{
+	display:block;
+	background-color:rgb(102,25,45);	
+	text-decoration:underline;
+}
+
+.search input.box {
+	background: #ffffff;
+	border:rgb(102,25,45) solid 1px;
+}
+.search input.box:focus {
+    background: #ffffff ;
+    outline: none;
+}
+#footer {
+	background:rgb(102,25,45);
+	text-align:center;
+	font-family:"SentyTEA 新蒂下午茶体", "微软雅黑", sans-serif;
+	font-size:20px;
+	font:bold;
+	color:#fff;
+}
+#footer li {
+	text-decoration:none;
+}

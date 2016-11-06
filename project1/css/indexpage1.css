@@ -1,0 +1,332 @@
+@charset "utf-8";
+/* CSS Document */
+/*-------------------------------global------------------*/
+* {
+	margin:0;
+	padding:0;
+	border:0;
+}
+@font-face {
+	font-family:"SentyTEA 新蒂下午茶体";
+	src:url(../font/SentyTEA.ttf) format("truetype");
+}
+/*------------------------stucture--------------------------*/
+/*body {
+	text-align=center;
+	font-family:"微软雅黑", "华文细黑", sans-serif;
+}
+#wrapper {
+	width:1008px;
+	margin:0 auto;
+	text-align:left;
+}
+#logopic {
+	width:302px;
+	float:left;
+	height:80px;
+}
+#searchform {
+	width:706px;
+	float:left;
+	height:80px;
+	padding:30px 0 0 0;
+}
+fieldset.search {
+    padding: 0px;
+    border:none;
+    width: 232px;
+    margin:20px 0px 0px 461px;
+}
+.search input.box {
+    height: 28px;
+    width: 200;
+    margin-right: 0px;
+    padding-right: 0px;
+    margin: 1px;
+}
+.navigator {
+	width:197px;
+	float:left;
+	text-align:center;
+}
+.search button {
+	padding:5px 0px 0px 13px;
+}*/
+#demo {
+	width:600px;
+	height:371px;
+	margin:10px;
+	float:left;
+}
+#pptdemo {
+	width:600px;
+	height:371px;
+	padding-bottom:10px;
+}
+#pptdemo img {
+	witdh:600px;
+	height:371px;
+}
+#brandrecomm {
+	width:360px;
+	height:371px;
+	margin:10px 0 0 20px;
+	float:left;
+}
+#brandrecomm table
+{
+	/*border:1px solid rgb(102,25,45);*/
+	border-collapse:collapse;
+	float:left;
+}
+#brandrecomm td {
+	/*border:1px solid rgb(102,25,45);
+	border-collapse:collapse;*/
+	width:170px;
+	height:120px;
+	text-align:left;
+	vertical-align:center;
+}
+#brandrecomm img {
+	width:120px;
+	height:80px;
+	margin:20px;
+}
+.mainbox,.flashbox {
+	overflow:hidden;
+	position:relative;
+}
+.imagebox {
+	text-align:right;
+	position:relative;
+	z-index:999;
+}
+.bitdiv {
+	display:inline-block;
+	width:12px;
+	height:12px;
+	cursor:pointer;
+	float:right;
+	margin:0 10px -10px 0;
+}
+.defimg{ 
+	background:url(icon/SpryMenuBarDownHover.gif) no-repeat;filter:alpha(opacity=50);
+	-moz-opacity:0.5;
+	opacity:0.5
+}
+.bitdiv{display:inline-block;width:18px;height:18px;margin:0 10px 10px 0px;cursor:pointer;}  
+.curimg{background:url(icon/SpryMenuBarRightHover.gif) no-repeat}
+/*这里是一个trick，我把demo宽度设为总宽度的0.618，把brandrecomm设为demo的0.618，刚好可以在页面放下*/
+/*#brands {
+	width:120px;
+	height:80px;
+}*/
+#femalerecomm, #malerecomm {
+	width:600px;
+	height:300px;
+	float:left;
+	margin:10px;
+	padding:0;
+	background:rgb(83,18,34);
+	text-align:left;
+}
+
+.recomtype{
+	position:absolute;
+	color:white;
+	margin:5px 0 0 5px;
+	font-family:sans-serif;
+	font-size:1.3em;
+}
+#femalerecomm img {
+	float:left;
+}
+.picA {
+	height:200px;
+	width:200px;
+	float:left;
+}
+.picB {
+	height:240px;
+	width:200px;
+	float:left;
+}
+.picC {
+	height:130px;
+	width:170px;
+	float:left;
+}
+.picD {
+	height:110px;
+	width:150px;
+	float:left;
+}
+#malerecomm img {
+	float:left;
+}
+#note {
+	width:361px;
+	height:300px;
+	float:left;
+	text-align:left;
+	margin:10px 0px 0px 10px;
+}
+#note img {
+	width:350px;
+	height:250px;
+}
+#situation {
+	width:361px;
+	height:300px;
+	float:left;
+	text-align:left;
+	margin:10px 0px 0px 10px;
+}
+.part {
+	float:left;
+	text-align:center;
+	width:350px;
+	height:44px;
+}
+.situ {
+	background:#fff;
+	width:358px;
+	height:260px;
+	margin:40px 0px 0px 0px;
+	float:left;
+}
+.content {
+	width:358px;
+	height:260px;
+	margin:40px 0px 0px 0px;
+	float:left;
+}
+/*.moduletitle {
+	width:280px;
+	height:40px;
+	text-align:left;
+	float:left;
+	clear:both;
+}
+.moduletitle h1 {
+	color:#fff;
+	font-size:20px;
+}*/
+/*-----------------------layout-----------------------------*/
+/*#navi a {
+	font-weight:bold;
+	font-family:"微软雅黑", "华文细黑", sans-serif;
+}
+#navi a:hover,a:active
+{
+	text-decoration:underline;
+}
+
+fieldset.search {
+	background:rgb(102,25,45);
+}
+form#searchf {
+	width:232px;
+}
+fieldset.search:hover {
+    background: rgb(102,25,45);
+}
+.search input, .search button {
+    border: none;
+    float: left;
+	background:rgb(102,25,45);
+}
+.search button a
+{
+	display:block;
+	cursor:pointer;
+	font-family:"微软雅黑", "华文细黑", sans-serif;
+	font-size:16px;
+	background-color:rgb(102,25,45);
+	color:white;
+	text-decoration:none;
+}
+.search button a:hover
+{
+	display:block;
+	background-color:rgb(102,25,45);	
+	text-decoration:underline;
+}
+
+.search input.box {
+	background: #ffffff;
+	border:rgb(102,25,45) solid 1px;
+}
+.search input.box:focus {
+    background: #ffffff ;
+    outline: none;
+}*/
+/*#brandform table {
+	border:1px solid;
+}
+#brandform td {
+	border:1px solid rgb(102,25,45);
+	border-collapse:collapse;
+	background:rgb(102,25,45);
+	color:#fff;
+}
+#brandform td:hover {
+	background:#000;
+}
+#brandform a{
+	text-decoration:none;
+	color:#fff;
+}
+#brandform a:hover {
+	text-decoration:underline;
+}*/
+li.gridpic {
+	position:relative;
+	list-style-type:none;
+	width:100%;
+	height:100%;
+}
+.gridtitle{
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: black;
+  filter: Alpha(Opacity=80);
+  opacity: 0.8;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  z-index:999;
+}
+.gridtitle span{
+  font-size: 12px;
+  display: block;
+  padding-top:10px;
+  height: 36px;
+  overflow: hidden;
+  color: #aaa;
+}
+#note {
+	background:rgb(83,18,34);;
+	border:solid 1px rgb(102,25,45);
+}
+#situation {
+	background:rgb(83,18,34);
+	border:solid 1px rgb(102,25,45);
+}
+	
+.content {
+	background:#fff;
+}
+.situ a {
+	color:#000;
+	text-decoration:none;
+	font-size:25px;
+	font-family:"SentyTEA 新蒂下午茶体", "微软雅黑", sans-serif;
+}
+.situ a:hover {
+	color:#000;
+	text-decoration:underline;
+	font-size:30px;
+}

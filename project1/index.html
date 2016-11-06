@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>PerfumeDaily</title>
+<script src="js/SpryMenuBar.js" type="text/javascript"></script>
+<script src="js/SpryTabbedPanels.js" type="text/javascript"></script>
+<script src="js/jquery-min.js" type="text/javascript"></script>
+<link href="css/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<link href="css/indexpage1.css" rel="stylesheet" />
+<link href="css/main.css" rel="stylesheet" />
+<link href="css/SpryTabbedPanels.css" rel="stylesheet" type="text/css" />
+<script src="js/gridpic.js" type="text/javascript" ></script>
+</head>
+<!--技术信息
+背景的紫红色rgb(102,25,45),此外还选用了黑色#000;
+请一律使用固定大小尺寸，例如，div宽度232px;
+>
+<!--开始写子页面时必读：
+1. 最后确定以后，每个人都不能再改变本压缩包的文件夹命名和文件名，否则会很麻烦
+2. 对于子页面的命名，每个人都必须严格遵照本导航中的页面命名，否则会很麻烦【尤其注意品牌名录的26个文件名。。。在下方被注释掉的表格里有体现】
+3. 香水图片、海报图片、瓶身图片等我们主要展示的图片请放在image文件夹【关于图片的命名参见上交的期中报告最终版，具体是形如香水名_品牌.jpg（png，jpeg...），务必保持命名统一，后期批量生成文件的时候还要用到，否则会很麻烦】，一些图标例如导航中的小小倒三角▽，放在icon文件夹里，否则会很麻烦
+4. 本页面的宽度限制为1008px，也就是wrapper块的宽度，请把所有的内容都放在最后一个</div>里面，以保证它们都被包括在里面
+5. 最后，每个人都不能私自改动这个文件，包括css文件，如果有需求就所有人一起改好了再写其他部分，我们必须保证整个全局导航部分一致
+6. 有什么技术上的困难，咱们再一起商量，推荐w3school.com.cn-->
+<body>
+	<div id="wrapper"><!--这个是在外面包裹的一层，用来限制整个页面-->
+		<div id="logopic">
+			<a href="index.html"><img src="image/logo.jpg" alt="perfumedaily" /></a>
+		</div>
+		<div id="searchform">
+			<form method="get" id="search" action="search.php"><!--only if we have this sort of thing...-->
+				<fieldset class="search">
+					 <input type="text" class="box" name="s" id="s" class="inputText" placeholder="Search in site" x-webkit-speech />
+					  <button type="submit" title="SEARCH"><a>Search</a></button>
+				</fieldset>
+			</form>
+		</div>
+		<div id="navi">
+		<ul id="MenuBar1" class="MenuBarHorizontal"><!--这一部分使用了spry框架的下拉菜单构件，经过了自己的简单修改，应该没有什么问题-->
+		  <li><a class="MenuBarItemSubmenu" href="html/product/female.html">Types</a>
+			<ul>
+			  <li><a href="html/product/female.html">For her</a></li>
+			  <li><a href="html/product/male.html">For him</a></li>
+			  <li><a href="html/product/neutral.html">Neutron</a></li>
+			  <li><a href="html/product/couple.html">Lovers</a></li>
+			</ul>
+		  </li>
+		  <li><a href="html/brand/brand.html">Brands</a></li>
+		  <li><a href="html/article/information.html">News</a></li>
+		  <li><a class="MenuBarItemSubmenu" href="html/article/history.html">Facts</a>
+			<ul>
+			  <li><a class="MenuBarItemSubmenu" href="html/article/history.html">Culture</a>
+				<ul>
+				  <li><a href="html/article/history.html">History</a></li>
+				  <li><a href="html/article/note.html">Notes</a></li>
+				</ul>
+			  </li>
+			  <li><a href="html/article/situation1.html">Situations</a></li>
+			  <li><a href="html/article/attention.html">Tips</a></li>
+			  <li><a href="html/article/craft.html">DIY</a></li>
+			</ul>
+		  </li>
+		  <li><a class="MenuBarItemSubmenu" href="html/error404.html">Derivatives</a>
+			<ul>
+				<li><a href="html/error404.html">Posters</a></li>
+				<li><a href="html/error404.html">Bottles</a></li>
+			</ul>
+		  </li>
+		</ul>
+		</div>
+
+		<div id="demo">
+			<div id="pptdemo">
+				<script type="text/javascript" src="js/pptDemo.js"></script>
+				<script type="text/javascript">
+					var box =new PPTBox();
+					box.width = 600; //宽度
+					box.height = 371;//高度
+					box.autoplayer = 4;//自动播放间隔时间
+					box.add({"url":"./image/poster/poster1.jpg","href":"html/article/history.html","title":"History of perfumes"})
+					box.add({"url":"./image/poster/poster2.jpg","href":"html/article/note.html","title":"Delve into Perfume Notes"})
+					box.add({"url":"./image/poster/poster3.jpg","href":"html/article/situation1.html","title":"Keep calm and wear perfume"})
+					box.add({"url":"./image/poster/poster4.jpg","title":"Tips when wearing"})
+					box.show();
+				</script>
+			</div>
+		</div>
+		<div id="brandrecomm">
+			<table>
+				<tr>
+				<td>
+				<li class="gridpic">
+							<a href="html/brand/chanel.html" target="_blank" class="gridtitle">Chanel 
+								<span>France</span>
+									</a>
+										<a href="html/brand/chanel.html"><img src="image/brand/chanel.jpg" class="brands" alt="chanel" />                       
+					</a>
+					</li>
+					</td>
+					<td>
+					<li class="gridpic">
+							<a href="html/brand/dior.html" target="_blank" class="gridtitle">Dior 
+								<span>France</span>
+									</a>
+				   <a href="html/brand/dior.html"><img src="image/brand/dior.jpg" class="brands" alt="dior"  /></a></li></td>
+				<tr>
+					<td>
+					<li class="gridpic">
+							<a href="html/brand/dkny.html" target="_blank" class="gridtitle">DKNY
+								<span>New York U.S.A</span>
+									</a>
+									<a href="html/brand/dkny.html"><img src="image/brand/DKNY.jpg" class="brands" alt="dkny" /></a></li></td>
+					<td>
+					<li class="gridpic">
+							<a href="html/brand/versace.html" target="_blank" class="gridtitle">versace
+								<span>Italy</span>
+									</a>
+									<a href="html/brand/versace.html"><img src="image/brand/versace.jpg" class="brands" alt="versace" /></a></li></td>
+				</tr>
+				<tr>
+					<td>
+					 <li class="gridpic">
+							<a href="html/brand/harajuku.html" target="_blank" class="gridtitle">Harajuku
+								<span>U.S.A</span>
+									</a><a href="html/brand/harajuku.html"><img src="image/brand/Harajuku.jpg" class="brands" alt="Harajuku" /></a></li></td>
+					<td>
+					 <li class="gridpic">
+							<a href="html/brand/demeter.html" target="_blank" class="gridtitle">Demeter 
+								<span>U.S.A</span>
+									</a><a href="html/brand/demeter.html"><img src="image/brand/Demeter.jpg" alt="Demeter" /></a></li></td>
+				</tr>
+			</table>
+		</div>
+		<div id="femalerecomm">
+			<h2 class = "recomtype">For her</h2>
+		  <div id="TabbedPanels1" class="TabbedPanels">
+			<ul class="TabbedPanelsTabGroup">
+			  <li class="TabbedPanelsTab" tabindex="0">New</li>
+			  <li class="TabbedPanelsTab" tabindex="0">Classic</li>
+			</ul>
+			<div class="TabbedPanelsContentGroup">
+			  <div class="TabbedPanelsContent">
+			  <div class="picB">
+					<li class="gridpic">
+						<a href="html/product/women/dragon fruit_demeter.html" target="_blank" class="gridtitle">Christmas Tree 
+								<span>Demiter</span>
+									</a>
+						<a href="html/product/women/dragon fruit_demeter.html" target="_blank"><img class="picB" src="image/product/women/dragon fruit_demeter.jpg" alt="Dragon Fruit"  target="_blank" /></a>
+					</li>
+				</div>
+				<div class="picA">
+					<li class="gridpic">
+						<a href="html/product/women/blooming bouquet_dior.html" target="_blank" class="gridtitle">Blooming Bouquet
+								<span>Dior</span>
+									</a>
+						<a href="html/product/women/blooming bouquet_dior.html" target="_blank"><img class="picA" src="image/product/women/blooming bouquet_dior.jpg" alt="Blooming Bouquet"  target="_blank" /></a>
+				</li>
+				</div>
+				<div class="picC">
+					<li class="gridpic">
+						<a href="html/product/women/love_harajuku.html" target="_blank" class="gridtitle">爱心娃娃 
+								<span>Harajuku</span>
+									</a>
+						<a href="html/product/women/_harajuku.html" target="_blank"><img class="picC" src="image/product/women/love_harajuku.jpg" alt="爱心娃娃"  target="_blank" /></a>
+				</li>
+				</div>
+				<div class="picD">
+					<li class="gridpic">
+						<a href="html/product/women/bright crystal absolu_versace.html" target="_blank" class="gridtitle">Bright Crystal Absolu
+								<span>bright crystal absolu</span>
+									</a>
+						<a href="html/product/women/bright crystal absolu_versace.html" target="_blank"><img class="picD" src="image/product/women/bright crystal absolu_versace.jpg"  target="_blank" /></a>
+				</li>
+				</div>
+			  </div>
+			  <div class="TabbedPanelsContent">
+				<div class="picB">
+					<li class="gridpic">
+						<a href="html/product/women/red jeans_versace.html" target="_blank" class="gridtitle">Red Jeans 
+								<span>Versage</span>
+									</a>
+						<a href="html/product/women/red jeans_versace.html" target="_blank"><img class="picB" src="image/product/women/red jeans_versace.jpg" alt="Red Jeans"  target="_blank" /></a>
+					</li>
+				</div>
+				<div class="picA">
+					<li class="gridpic">
+						<a href="html/product/women/j'adore_dior.html" target="_blank" class="gridtitle">J'adore 
+								<span>Dior</span>
+									</a>
+						<a href="html/product/women/jadore_dior.html" target="_blank"><img class="picA" src="image/product/women/j'adore_dior.jpg" alt="J'adore"  target="_blank" /></a>
+				</li>
+				</div>
+				<div class="picC">
+					<li class="gridpic">
+						<a href="html/product/women/be delicious_dkny.html" target="_blank" class="gridtitle">Be delicious 
+								<span>DKNY</span>
+									</a>
+						<a href="html/product/women/be delicious_dkny.html" target="_blank"><img class="picC" src="image/product/women/be delicious_dkny.jpg" alt="Be delicious"  target="_blank" /></a>
+				</li>
+				</div>
+				<div class="picD">
+					<li class="gridpic">
+						<a href="html/product/women/gianni versace couture_versace.html" target="_blank" class="gridtitle">Glanni Versace Couture 
+								<span>Versace</span>
+									</a>
+						<a href="html/product/women/gianni versace couture_versace.html" target="_blank"><img class="picD" src="image/product/women/gianni versace couture_versace.jpg" alt="gianni versace couture"  target="_blank" /></a>
+				</li>
+				</div>
+			  </div>
+			  </div> 
+		  </div>
+		  </div>
+			<div id="note">
+				<h2 class = "recomtype">Note</h2>
+				<div class="content">
+				<a href="http://www.fragrancesoftheworld.com/external/wheel/index.html" target="_blank"><img src="image/notes.png" alt="notes" /></a>
+				</div>
+			</div>
+			<div id="malerecomm">
+				<h2 class = "recomtype">For him</h2>
+		  <div id="TabbedPanels2" class="TabbedPanels">
+			  <ul class="TabbedPanelsTabGroup">
+				<li class="TabbedPanelsTab" tabindex="0">New</li>
+				<li class="TabbedPanelsTab" tabindex="0">Classic</li>
+			  </ul>
+			  <div class="TabbedPanelsContentGroup">
+				<div class="TabbedPanelsContent">
+			  <div class="picB">
+					<li class="gridpic">
+						<a href="html/error404.html" target="_blank" class="gridtitle">Homme
+								<span>Armani</span>
+									</a>
+						<a href="html/error404.html" target="_blank"><img class="picB" src="image/product/men/homme_armani.jpg" alt="Homme"  target="_blank" /></a>
+					</li>
+				</div>
+				<div class="picA">
+					<li class="gridpic">
+						<a href="html/error404.html" target="_blank" class="gridtitle">Eternity
+								<span>Calvin Klein</span>
+									</a>
+						<a href="html/error404.html" target="_blank"><img class="picA" src="image/product/men/eternity_calvin klein.jpg" alt="Eternity"  target="_blank" /></a>
+				</li>
+				</div>
+				<div class="picC">
+					<li class="gridpic">
+						<a href="html/product/men/eros_versace.html" target="_blank" class="gridtitle">Eros
+								<span>Versage</span>
+									</a>
+						<a href="html/product/men/eros_versace.html" target="_blank"><img class="picC" src="image/product/men/eros_versace.jpg" alt="Eros"  target="_blank" /></a>
+				</li>
+				</div>
+				<div class="picD">
+					<li class="gridpic">
+						<a href="html/product/men/homme_dior.html" target="_blank" class="gridtitle">Homme
+								<span>Dior</span>
+									</a>
+						<a href="html/product/men/homme_dior.html" target="_blank"><img class="picD" src="image/product/men/homme_dior.jpg"  target="_blank" alt="Homme" /></a>
+				</li>
+				</div>
+			  </div>
+			  <div class="TabbedPanelsContent">
+				<div class="picB">
+					<li class="gridpic">
+						<a href="html/error404.html" target="_blank" class="gridtitle">Dreamer 
+								<span>Versace</span>
+									</a>
+						<a href="html/error404.html" target="_blank"><img class="picB" src="image/product/men/dreamer_versace.jpg" alt="Dreamer"  target="_blank" /></a>
+				</li>
+				</div>
+				<div class="picA">
+				<li class="gridpic">
+						<a href="html/product/baby blue jeans_versace.html" target="_blank" class="gridtitle">Baby Blue Jeans 
+								<span>Versace</span>
+									</a>
+						<a href="html/product/men/baby blue jeans_versace.html" target="_blank"><img class="picA" src="image/product/men/baby blue jeans_versace.jpg" alt="baby blue jeans"  target="_blank" /></a>
+				</li>
+				</div>
+				<div class="picC">
+					<li class="gridpic">
+						<a href="html/product/men/eau sauvage_dior.html" target="_blank" class="gridtitle">Eau Sauvage
+								<span>Dior</span>
+									</a>
+						<a href="html/product/men/eau sauvage_dior.html" target="_blank"><img class="picC" src="image/product/men/eau sauvage_dior.jpg" alt="Eau Sauvage"  target="_blank" /></a>
+				</li>
+				</div>
+				<div class="picD">
+					<li class="gridpic">
+						<a href="html/error404.html" target="_blank" class="gridtitle">Boss 
+								<span>Hugo</span>
+									</a>
+						<a href="html/error404.html" target="_blank"><img class="picD" src="image/product/men/boss_hugo boss.jpg" alt="Boss"  target="_blank" /></a>
+					</li>
+				</div>
+			  </div>
+		  </div>
+		</div>
+		</div>
+	  <div id="situation">
+	  	<h2 class = "recomtype">Situations</h2>
+		  <div class="situ">
+			<div class="part"><p><a href="html/article/situation1.html" target="_blank" >Dinner</a></p></div>
+			<div class="part"><p><a href="html/article/situation2.html" target="_blank" >Travel</a></p></div>
+			<div class="part"><p><a href="html/article/situation3.html" target="_blank" >Sports</a></p></div>
+			<div class="part"><p><a href="html/article/situation4.html" target="_blank" >Office</a></p></div>
+			<div class="part"><p><a href="html/article/situation5.html" target="_blank" >Dating</a></p></div>
+			<div class="part"><p><a href="html/article/situation6.html" target="_blank" >Commercial</a></p></div>
+		  </div>
+	  </div>
+	  <div id="footer">
+		  <ul>
+			<li>Dan Lou: Prototype, data gathering, brand pages</li>
+			<li>Shenyu Ding: data gathering, news pages</li>
+			<li>Tianyi Liu: Prototype, data gathering, mainpage and product showcasing pages, situation pages.</li>
+		  </ul>
+		<p>Contact</p>
+		<form action="MAILTO:liutianyi@pku.edu.cn" method="post" enctype="text/plain">
+			Name：
+			<input type="text" name="name" value="yourname" size="20">
+			Email：
+			<input type="text" name="mail" value="yourmail" size="20">
+			Content：
+			<input type="text" name="comment" value="yourcomment" size="40">
+			<input type="submit" value="发送">
+			<input type="reset" value="重置">
+		</form>
+		<p>&copy; 2014 Web Architecture course PerfumeDaily group &copy;</p>
+	  </div>
+	</div>
+	<script type="text/javascript">
+	var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"icon/SpryMenuBarDownHover.gif", imgRight:"icon/SpryMenuBarRightHover.gif"});
+	</script>
+
+	<script type="text/javascript">
+	var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
+	</script>
+	<script type="text/javascript">
+	$(".gridpic").hover(
+	  function () {
+		$(this).children('.gridtitle').stop(true,true).slideDown('fast');
+	  },
+	  function () {
+		$(this).children('.gridtitle').stop(true,true).slideUp('fast');
+	  }
+	);
+	var TabbedPanels2 = new Spry.Widget.TabbedPanels("TabbedPanels2");
+	</script>
+</body>
+</html>

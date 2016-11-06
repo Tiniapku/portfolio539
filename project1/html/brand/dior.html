@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title> 迪奥</title>
+<script src="../../js/SpryMenuBar.js" type="text/javascript"></script>
+<link href="../../css/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<link href="../../css/main.css" rel="stylesheet" />
+<link href="../../css/brand_detail.css" rel="stylesheet" />
+</head>
+<!--开始写子页面时必读：
+1. 最后确定以后，每个人都不能再改变本压缩包的文件夹命名和文件名，否则会很麻烦
+2. 对于子页面的命名，每个人都必须严格遵照本导航中的页面命名，否则会很麻烦【尤其注意品牌名录的26个文件名。。。在下方被注释掉的表格里有体现】
+3. 香水图片、海报图片、瓶身图片等我们主要展示的图片请放在image文件夹【关于图片的命名参见上交的期中报告最终版，具体是形如香水名_品牌.jpg（png，jpeg...），务必保持命名统一，后期批量生成文件的时候还要用到，否则会很麻烦】，一些图标例如导航中的小小倒三角▽，放在icon文件夹里，否则会很麻烦
+4. 本页面的宽度限制为1008px，也就是wrapper块的宽度，请把所有的内容都放在最后一个</div>里面，以保证它们都被包括在里面
+5. 最后，每个人都不能私自改动这个文件，包括css文件，如果有需求就所有人一起改好了再写其他部分，我们必须保证整个全局导航部分一致
+6. 有什么技术上的困难，咱们再一起商量，推荐w3school.com.cn-->
+<body>
+<div id="wrapper"><!--这个是在外面包裹的一层，用来限制整个页面-->
+<div id="logopic">
+	<a href="../../index.html"><img src="../../image/logo.jpg" alt="perfumedaily" /></a>
+</div>
+<div id="searchform">
+	<form method="get" id="searchf" action="search.php"><!--only if we have this sort of thing...-->
+        <fieldset class="search">
+             <input type="text" class="box" name="s" id="s" class="inputText" placeholder="搜索品牌" x-webkit-speech>
+              <button type="submit" title="SEARCH"><a>搜索</a></button>
+        </fieldset>
+	</form>
+</div>
+<div id="navi">
+		<ul id="MenuBar1" class="MenuBarHorizontal"><!--这一部分使用了spry框架的下拉菜单构件，经过了自己的简单修改，应该没有什么问题-->
+  			<li><a class="MenuBarItemSubmenu" href="../product/female.html">香水类型</a>
+    			<ul>
+      				<li><a href="../product/female.html">女士香水</a></li>
+      				<li><a href="../product/male.html">男士香水</a></li>
+      				<li><a href="../product/neutral.html">中性香水</a></li>
+      				<li><a href="../product/couple.html">情侣香水</a></li>
+    			</ul>
+  			</li>
+  			<li><a href="../brand/brand.html">品牌名录</a></li>
+  			<li><a href="../article/information.html">香水资讯</a></li>
+  			<li><a class="MenuBarItemSubmenu" href="../article/history.html">香水学堂</a>
+    			<ul>
+      				<li><a class="MenuBarItemSubmenu" href="../article/history.html">香水文化</a>
+        				<ul>
+          					<li><a href="../article/history.html">香水历史</a></li>
+          					<li><a href="../article/note.html">香调研究</a></li>
+        				</ul>
+      				</li>
+      				<li><a href="../article/situation1.html">使用场合</a></li>
+      				<li><a href="../article/attention.html">注意事项</a></li>
+					<li><a href="../article/craft.html">香水DIY</a></li>
+    			</ul>
+  			</li>
+  			<li><a class="MenuBarItemSubmenu" href="../error404.html">香水周边</a>
+  				<ul>
+    				<li><a href="../error404.html">香水海报</a></li>
+        			<li><a href="../error404.html">香水瓶身</a></li>
+    			</ul>
+  			</li>
+		</ul>
+	</div>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"icon/SpryMenuBarDownHover.gif", imgRight:"icon/SpryMenuBarRightHover.gif"});
+</script>
+<!--品牌索引菜单-->
+<!--到了详情界面，那么就不在是链接到自己页面的部分，而是链到其他网页部分-->
+<div class="brandmenu">
+	<ul> <!--attention！！下面是跳到另一个界面的一个部分-->
+    	<li id="brandlabel"> 品牌名录</li>
+        <li><a href="brand.html#brand_a">A</a></li>
+        <li><a href="brand.html#brand_b">B</a></li>
+        <li><a href="brand.html#brand_c">C</a></li>
+        <li><a href="brand.html#brand_d">D</a></li>
+        <li><a href="brand.html#brand_e">E</a></li>
+        <li><a href="brand.html#brand_f">F</a></li>
+        <li><a href="brand.html#brand_g">G</a></li>
+        <li><a href="brand.html#brand_h">H</a></li>
+        <li><a href="brand.html#brand_i">I</a></li>
+        <li><a href="brand.html#brand_j">J</a></li>
+        <li><a href="brand.html#brand_k">K</a></li>
+        <li><a href="brand.html#brand_l">L</a></li>
+        <li><a href="brand.html#brand_m">M</a></li>
+        <li><a href="brand.html#brand_n">N</a></li>
+        <li><a href="brand.html#brand_o">O</a></li>
+        <li><a href="brand.html#brand_p">P</a></li>
+        <li><a href="brand.html#brand_q">Q</a></li>
+        <li><a href="brand.html#brand_r">R</a></li>
+        <li><a href="brand.html#brand_s">S</a></li>
+        <li><a href="brand.html#brand_t">T</a></li>
+        <li><a href="brand.html#brand_u">U</a></li>
+        <li><a href="brand.html#brand_v">V</a></li>
+        <li><a href="brand.html#brand_w">W</a></li>
+        <li><a href="brand.html#brand_x">X</a></li>
+        <li><a href="brand.html#brand_y">Y</a></li>
+        <li><a href="brand.html#brand_z">Z</a></li>
+     </ul>
+     </div>
+          <div id="bread">
+        <a href="../../index.html">首页</a>
+        <span>》</span>
+        <a href="brand.html">品牌名录</a>
+       <span>》</span>
+        <a href="dior.html">迪奥/Dior</a>
+</div>
+<div class="brand_detail">
+    <div class="imgborder"><!--width\height-->
+    <img src="../../image/brand/dior.jpg" alt="迪奥" />
+    </div>
+    <h1> 迪奥/Dior </h1> <!--居中颜色字体大小-->
+    <div class="description"><!--width\margin?-->
+    	<p>迪奥（Dior），由法国时装设计师克里斯汀•迪奥（Christian Dior）于1946年创于巴黎，是世界著名的时尚消费品牌。主要经营女装、男装、首饰、香水、化妆品等高档消费品。亦为全球的高级时尚品牌控股公司——LVMH路易威登集团的子公司。</p>
+     <p>克里斯汀•迪奥于1905年出生于法国的诺曼底，"Dior"在法文中是"上帝"（Dieu）和"金子"（or）的组合，金色后来也成了Dior品牌最常见的代表色。克里斯汀•迪奥并不是服装设计出身，毕业于巴黎政治学院，又作为企业家之子，他对艺术的热情却从未消退。1946年，在时尚领域不断浮沉后，已经不惑之年的克里斯汀•迪奥才在巴黎Montaigne大道开了第一家个人服饰店。</p>
+  	<p>克里斯汀•迪奥自己曾经说过："香水是一扇通往全新世界的大门，所以我选择制造香水，哪怕你仅在香水瓶旁边逗留一会儿，你便能感受到我的设计魅力，我所打扮的每一位女性都散发出朦胧诱人的雅性，香水是女性个性不可或缺的补充，只有它才能点缀我的衣裳，让它更加完美，它和时装一起使得女人们风情万种。"</p>
+<p>1947年起，迪奥公司即成立自己的美妍研发中心。他们有近200位研究人员、生物学家、医师、药物学家与全球联网的20多家大学研究中心与科学机构合作，共同在创新美妍科技的最前线努力。对于他们的每款产品，触感一直是迪奥强调的重点，亦是他们坚持不变的传统。柔滑的触感，美丽的肌肤以及迷人的芳香都是女性所要求的重点；迪奥的护肤产品带来的是科技与愉悦的完美结合。</p>
+    </div>
+ <div class="func_hr"></div>
+ 
+<!--产品展示还没搞好-->
+ <div class="products">
+          <div class="product">
+             <a href="../product/women/j'adore_dior.html" class="imgborder2"><img src="../../image/product/women/j'adore_dior.jpg" alt="j'adore_dior "/></a>
+            <div class="product_des">
+                <ul>
+                 	 <li><a href="../product/women/j'adore_dior.html"><h2>j'adore_dior</h2></a></li>
+					 <li>类型：女士香水</li>
+                	 <li>前调：柑橘</li>
+                     <li>中调：大马士革玫瑰</li>
+                     <li>后调：橙花油</li>
+                     <li>浓度:Eau de toilette</li>
+                     <li>发行年：1999</li>
+                </ul>
+            </div>               
+        </div> 
+          <div class="product">
+             <a href="../product/women/blooming bouquet_dior.html" class="imgborder2"><img src="../../image/product/women/blooming bouquet_dior.jpg" alt="blooming bouquet_dior "/></a>
+            <div class="product_des">
+                <ul>
+                 	 <li><a href="../product/women/blooming bouquet_dior.html"><h2>blooming_dior</h2></a></li>
+					 <li>类型：女士香水</li>
+                	 <li>前调：柑橘</li>
+                     <li>中调：牡丹</li>
+                     <li>后调：广藿香</li>
+                     <li>浓度:Eau de toilette</li>
+                     <li>发行年：0</li>
+                </ul>
+            </div>               
+        </div> 
+          <div class="product">
+             <a href="../product/women/addict_dior.html" class="imgborder2"><img src="../../image/product/women/addict_dior.jpg" alt="addict_dior "/></a>
+            <div class="product_des">
+                <ul>
+                 	 <li><a href="../product/women/addict_dior.html"><h2>addict_dior</h2></a></li>
+					 <li>类型：女士香水</li>
+                	 <li>前调：佛手柑</li>
+                     <li>中调：小苍兰、铃兰</li>
+                     <li>后调：白麝香</li>
+                     <li>浓度:Eau de toilette</li>
+                     <li>发行年：2012</li>
+                </ul>
+            </div>               
+        </div> 
+          <div class="product">
+             <a href="../product/men/homme_dior.html" class="imgborder2"><img src="../../image/product/men/homme_dior.jpg" alt="homme_dior "/></a>
+            <div class="product_des">
+                <ul>
+                 	 <li><a href="../product/men/homme_dior.html"><h2>homme_dior</h2></a></li>
+					 <li>类型：男士香水</li>
+                	 <li>前调：佛手柑</li>
+                     <li>中调：葡萄柚</li>
+                     <li>后调：白藿香</li>
+                     <li>浓度:Cologne</li>
+                     <li>发行年：2001</li>
+                </ul>
+            </div>               
+        </div> 
+          <div class="product">
+             <a href="../product/men/eau sauvage_dior.html" class="imgborder2"><img src="../../image/product/men/eau sauvage_dior.jpg" alt="eau sauvage_dior "/></a>
+            <div class="product_des">
+                <ul>
+                 	 <li><a href="../product/men/eau sauvage_dior.html"><h2>eau sauvage_dior</h2></a></li>
+					 <li>类型：男士香水</li>
+                	 <li>前调：佛手柑</li>
+                     <li>中调：茉莉</li>
+                     <li>后调：香根草</li>
+                     <li>浓度:Cologne</li>
+                     <li>发行年：1966</li>
+                </ul>
+            </div>               
+        </div> 
+
+</div>
+
+<!--对应css-->
+
+
+
+
+</div>
+<div id="footer">
+  <ul>
+  	<li>娄丹：原型设计、数据收集、品牌展示页面设计与实现</li>
+    <li>丁震宇：数据收集</li>
+    <li>刘天祎：原型设计、数据收集、主页及产品展示页面设计与实现</li>
+  </ul>
+  <p>&copy; 2014《Web信息架构》课程 PerfumeDaily小组 版权所有</p>
+  </div>
+</div>
+</body>
+</html> 

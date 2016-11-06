@@ -1,0 +1,309 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title> 范思哲</title>
+<script src="../../js/SpryMenuBar.js" type="text/javascript"></script>
+<link href="../../css/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<link href="../../css/main.css" rel="stylesheet" />
+<link href="../../css/brand_detail.css" rel="stylesheet" />
+</head>
+<!--开始写子页面时必读：
+1. 最后确定以后，每个人都不能再改变本压缩包的文件夹命名和文件名，否则会很麻烦
+2. 对于子页面的命名，每个人都必须严格遵照本导航中的页面命名，否则会很麻烦【尤其注意品牌名录的26个文件名。。。在下方被注释掉的表格里有体现】
+3. 香水图片、海报图片、瓶身图片等我们主要展示的图片请放在image文件夹【关于图片的命名参见上交的期中报告最终版，具体是形如香水名_品牌.jpg（png，jpeg...），务必保持命名统一，后期批量生成文件的时候还要用到，否则会很麻烦】，一些图标例如导航中的小小倒三角▽，放在icon文件夹里，否则会很麻烦
+4. 本页面的宽度限制为1008px，也就是wrapper块的宽度，请把所有的内容都放在最后一个</div>里面，以保证它们都被包括在里面
+5. 最后，每个人都不能私自改动这个文件，包括css文件，如果有需求就所有人一起改好了再写其他部分，我们必须保证整个全局导航部分一致
+6. 有什么技术上的困难，咱们再一起商量，推荐w3school.com.cn-->
+<body>
+<div id="wrapper"><!--这个是在外面包裹的一层，用来限制整个页面-->
+<div id="logopic">
+	<a href="../../index.html"><img src="../../image/logo.jpg" alt="perfumedaily" /></a>
+</div>
+<div id="searchform">
+	<form method="get" id="searchf" action="search.php"><!--only if we have this sort of thing...-->
+        <fieldset class="search">
+             <input type="text" class="box" name="s" id="s" class="inputText" placeholder="搜索品牌" x-webkit-speech>
+              <button type="submit" title="SEARCH"><a>搜索</a></button>
+        </fieldset>
+	</form>
+</div>
+<div id="navi">
+		<ul id="MenuBar1" class="MenuBarHorizontal"><!--这一部分使用了spry框架的下拉菜单构件，经过了自己的简单修改，应该没有什么问题-->
+  			<li><a class="MenuBarItemSubmenu" href="../product/female.html">香水类型</a>
+    			<ul>
+      				<li><a href="../product/female.html">女士香水</a></li>
+      				<li><a href="../product/male.html">男士香水</a></li>
+      				<li><a href="../product/neutral.html">中性香水</a></li>
+      				<li><a href="../product/couple.html">情侣香水</a></li>
+    			</ul>
+  			</li>
+  			<li><a href="../brand/brand.html">品牌名录</a></li>
+  			<li><a href="../article/information.html">香水资讯</a></li>
+  			<li><a class="MenuBarItemSubmenu" href="../article/history.html">香水学堂</a>
+    			<ul>
+      				<li><a class="MenuBarItemSubmenu" href="../article/history.html">香水文化</a>
+        				<ul>
+          					<li><a href="../article/history.html">香水历史</a></li>
+          					<li><a href="../article/note.html">香调研究</a></li>
+        				</ul>
+      				</li>
+      				<li><a href="../article/situation1.html">使用场合</a></li>
+      				<li><a href="../article/attention.html">注意事项</a></li>
+					<li><a href="../article/craft.html">香水DIY</a></li>
+    			</ul>
+  			</li>
+  			<li><a class="MenuBarItemSubmenu" href="../error404.html">香水周边</a>
+  				<ul>
+    				<li><a href="../error404.html">香水海报</a></li>
+        			<li><a href="../error404.html">香水瓶身</a></li>
+    			</ul>
+  			</li>
+		</ul>
+	</div>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"icon/SpryMenuBarDownHover.gif", imgRight:"icon/SpryMenuBarRightHover.gif"});
+</script>
+<!--品牌索引菜单-->
+<!--到了详情界面，那么就不在是链接到自己页面的部分，而是链到其他网页部分-->
+<div class="brandmenu">
+	<ul> <!--attention！！下面是跳到另一个界面的一个部分-->
+    	<li id="brandlabel"> 品牌名录</li>
+        <li><a href="brand.html#brand_a">A</a></li>
+        <li><a href="brand.html#brand_b">B</a></li>
+        <li><a href="brand.html#brand_c">C</a></li>
+        <li><a href="brand.html#brand_d">D</a></li>
+        <li><a href="brand.html#brand_e">E</a></li>
+        <li><a href="brand.html#brand_f">F</a></li>
+        <li><a href="brand.html#brand_g">G</a></li>
+        <li><a href="brand.html#brand_h">H</a></li>
+        <li><a href="brand.html#brand_i">I</a></li>
+        <li><a href="brand.html#brand_j">J</a></li>
+        <li><a href="brand.html#brand_k">K</a></li>
+        <li><a href="brand.html#brand_l">L</a></li>
+        <li><a href="brand.html#brand_m">M</a></li>
+        <li><a href="brand.html#brand_n">N</a></li>
+        <li><a href="brand.html#brand_o">O</a></li>
+        <li><a href="brand.html#brand_p">P</a></li>
+        <li><a href="brand.html#brand_q">Q</a></li>
+        <li><a href="brand.html#brand_r">R</a></li>
+        <li><a href="brand.html#brand_s">S</a></li>
+        <li><a href="brand.html#brand_t">T</a></li>
+        <li><a href="brand.html#brand_u">U</a></li>
+        <li><a href="brand.html#brand_v">V</a></li>
+        <li><a href="brand.html#brand_w">W</a></li>
+        <li><a href="brand.html#brand_x">X</a></li>
+        <li><a href="brand.html#brand_y">Y</a></li>
+        <li><a href="brand.html#brand_z">Z</a></li
+     </ul>
+     </div>
+          <div id="bread">
+        <a href="../../index.html">首页</a>
+        <span>》</span>
+        <a href="brand.html">品牌名录</a>
+       <span>》</span>
+        <a href="versace.html">范思哲/Versace</a>
+</div>
+<div class="brand_detail">
+    <div class="imgborder"><!--width\height-->
+    <img src="../../image/brand/Versace.jpg" alt="范思哲" />
+    </div>
+    <h1> 范思哲/Versace </h1> <!--居中颜色字体大小-->
+    <div class="description"><!--width\margin?-->
+    	<p>来自意大利知名的奢侈品牌范思哲（Versace）创造了一个时尚帝国，代表着一个品牌家族，范思哲的时尚产品渗透了生活的每个领域，其鲜明的设计风格，独特的美感，极强的先锋艺术表征让它风靡全球。它的设计风格鲜明，是独特的美感极强的先锋艺术的象征。其中最魅力独具的是那些展示充满文艺复兴时期特色的华丽的具有丰富想象力的女装款式，它们性感漂亮，女性味十足，色彩鲜艳，既有歌剧式的超平现实的华丽，又能充分考虑穿着舒适性及恰当地显示体型。范思哲还经营香水、眼镜、领带、皮件、包袋、瓷器、玻璃器皿、丝巾、羽绒制品、家具产品等。</p>
+     <p>创立于1978年，品牌标志是神话中的蛇妖美杜莎（Medusa），代表着致命的吸引力。范思哲的设计风格非常鲜明，独特的美感、极强的先锋艺术表征让他风靡全球，他强调快乐与性感，领口常开到腰部以下，拮取了古典贵族风格的豪华、奢丽，又能充分考虑穿着舒适及恰当的显示体型。范思哲善于采用高贵豪华的面料，借助斜裁方式，在生硬的几何线条与柔和的身体曲线间巧妙过渡，范思哲的套装、裙子、大衣等都以线条为标志，性感地表达女性的身体。范思哲品牌主要服务对象是皇室贵族和明星，其中女晚装是范思哲的精髓和灵魂。</p>
+  	<p>范思哲logo设计运用象征的手法，采用神话中蛇妖美杜莎的造型作为精神象征所在，汲取古希腊、埃及、印度等的瑰丽文化打造而成。美杜莎代表着致命的吸引力，它象征着范思哲不仅有着超脱歌剧式的华丽，极强的先锋潮流艺术特征受到世人的追捧。范思哲品牌创造了意大利 时尚的帝国，它渗透到人们心中的每个角落，参悟透人心所念。华丽的设计更是对于生活的热爱，憧憬着未来的无限美好与喜悦，将人性中最性感的部分展露无遗。创始人：Gianni Versace 詹尼•范思哲（1997 年逝世）</p>
+<p></p>
+    </div>
+ <div class="func_hr"></div>
+ 
+ <div class="products">
+ <div class="product">
+             <a href="../product/women/bright crystal absolu_versace.html" class="imgborder2"><img src="../../image/product/women/bright crystal absolu_versace.jpg" alt="bright crystal absolu_versace "/></a>
+            <div class="product_des">
+                <ul>
+                 	 <li><a href="../product/women/bright crystal absolu_versace.html"><h2>bright crystal absolu_versace</h2></a></li>
+					 <li>类型：女士香水</li>
+                	 <li>前调：柚子、石榴籽、覆盆子醇</li>
+                     <li>中调：牡丹、木兰花、莲花</li>
+                     <li>后调：植物琥珀、桃花木、麝香</li>
+                     <li>浓度:Eau de parfume</li>
+                     <li>发行年：2013</li>
+                </ul>
+            </div>               
+        </div> 
+          <div class="product">
+             <a href="../product/women/gianni versace couture_versace.html" class="imgborder2"><img src="../../image/product/women/gianni versace couture_versace.jpg" alt="gianni versace couture_versace "/></a>
+            <div class="product_des">
+                <ul>
+                 	 <li><a href="../product/women/gianni versace couture_versace.html"><h2>gianni versace couture_versace</h2></a></li>
+					 <li>类型：女士香水</li>
+                	 <li>前调：佛手柑、柑橘、草莓、橘子</li>
+                     <li>中调：茉莉、天芥菜</li>
+                     <li>后调：薰草豆、广藿香、檀香</li>
+                     <li>浓度:</li>
+                     <li>发行年：2008</li>
+                </ul>
+            </div>               
+        </div> 
+          <div class="product">
+             <a href="../product/women/red jeans_versace.html" class="imgborder2"><img src="../../image/product/women/red jeans_versace.jpg" alt="red jeans_versace "/></a>
+            <div class="product_des">
+                <ul>
+                 	 <li><a href="../product/women/red jeans_versace.html"><h2>red jeans_versace</h2></a></li>
+					 <li>类型：女士香水</li>
+                	 <li>前调：桃、杏、小苍兰、黑醋栗</li>
+                     <li>中调：山谷百合、水仙、水百合、玫瑰</li>
+                     <li>后调：檀香、麝香和香子兰</li>
+                     <li>浓度:Eau de toilette</li>
+                     <li>发行年：1994</li>
+                </ul>
+            </div>               
+        </div> 
+          <div class="product">
+             <a href="../product/women/crystal noir_versace.html" class="imgborder2"><img src="../../image/product/women/crystal noir_versace.jpg" alt="crystal noir_versace "/></a>
+            <div class="product_des">
+                <ul>
+                 	 <li><a href="../product/women/crystal noir_versace.html"><h2>crystal noir_versace</h2></a></li>
+					 <li>类型：女士香水</li>
+                	 <li>前调：</li>
+                     <li>中调：栀子花</li>
+                     <li>后调：琥珀、麝香</li>
+                     <li>浓度:Eau de toilette</li>
+                     <li>发行年：2004</li>
+                </ul>
+            </div>               
+        </div> 
+          <div class="product">
+             <a href="../product/women/vanitas_versace.html" class="imgborder2"><img src="../../image/product/women/vanitas_versace.jpg" alt="vanitas perfume_versace "/></a>
+            <div class="product_des">
+                <ul>
+                 	 <li><a href="../product/women/vanitas_versace.html"><h2>vanitas_versace</h2></a></li>
+					 <li>类型：女士香水</li>
+                	 <li>前调：酸橙</li>
+                     <li>中调：栀子花、小苍兰</li>
+                     <li>后调：雪松</li>
+                     <li>浓度:EDT/EDP</li>
+                     <li>发行年：2011</li>
+                </ul>
+            </div>               
+        </div> 
+          <div class="product">
+             <a href="../product/women/yellow diamond_versace.html" class="imgborder2"><img src="../../image/product/women/yellow diamond_versace.jpg" alt="yellow diamond perfume_versace "/></a>
+            <div class="product_des">
+                <ul>
+                 	 <li><a href="../product/women/yellow diamond_versace.html"><h2>yellow diamond perfume_versace</h2></a></li>
+					 <li>类型：女士香水</li>
+                	 <li>前调：</li>
+                     <li>中调：</li>
+                     <li>后调：</li>
+                     <li>浓度:Eau de toilette</li>
+                     <li>发行年：2011</li>
+                </ul>
+            </div>               
+        </div> 
+  
+          <div class="product">
+             <a href="../product/men/versace pour homme_versace.html" class="imgborder2"><img src="../../image/product/men/versace pour homme_versace.jpg" alt="versace pour homme_versace "/></a>
+            <div class="product_des">
+                <ul>
+                 	 <li><a href="../product/men/versace pour homme_versace.html"><h2>versace pour homme_versace</h2></a></li>
+					 <li>类型：男士香水</li>
+                	 <li>前调：</li>
+                     <li>中调：鼠尾草、蓝风信子、雪松木、沉香</li>
+                     <li>后调：琥珀、麝香</li>
+                     <li>浓度:</li>
+                     <li>发行年：2008</li>
+                </ul>
+            </div>               
+        </div> 
+          <div class="product">
+             <a href="../product/men/eros_versace.html" class="imgborder2"><img src="../../image/product/men/eros_versace.jpg" alt="eros_versace "/></a>
+            <div class="product_des">
+                <ul>
+                 	 <li><a href="../product/men/eros_versace.html"><h2>eros_versace</h2></a></li>
+					 <li>类型：男士香水</li>
+                	 <li>前调：薄荷叶、柠檬、青苹果</li>
+                     <li>中调：黑香豆、香草</li>
+                     <li>后调：雪松、香根草、橡树苔藓</li>
+                     <li>浓度:</li>
+                     <li>发行年：2012</li>
+                </ul>
+            </div>               
+        </div> 
+          <div class="product">
+             <a href="../product/men/eau fraiche_versace.html" class="imgborder2"><img src="../../image/product/men/eau fraiche_versace.jpg" alt="eau fraiche_versace "/></a>
+            <div class="product_des">
+                <ul>
+                 	 <li><a href="../product/men/eau fraiche_versace.html"><h2>eau fraiche_versace</h2></a></li>
+					 <li>类型：男士香水</li>
+                	 <li>前调：杨桃、白柠檬、花梨木</li>
+                     <li>中调：雪松叶、龙蒿、鼠尾草</li>
+                     <li>后调：梧桐木、琥珀、麝香</li>
+                     <li>浓度:Eau Fraiche</li>
+                     <li>发行年：</li>
+                </ul>
+            </div>               
+        </div> 
+          <div class="product">
+             <a href="../product//baby blue jeans_versace.html" class="imgborder2"><img src="../../image/product//baby blue jeans_versace.jpg" alt="baby blue jeans_versace "/></a>
+            <div class="product_des">
+                <ul>
+                 	 <li><a href="../product//baby blue jeans_versace.html"><h2>baby blue jeans_versace</h2></a></li>
+					 <li>类型：男士香水</li>
+                	 <li>前调：酸橙、柑橘、佛手柑</li>
+                     <li>中调：迷迭香、鸢尾花、枫子香</li>
+                     <li>后调：檀香、广藿香、麝香、香子兰、雪松</li>
+                     <li>浓度:Eau de toilette</li>
+                     <li>发行年：1995</li>
+                </ul>
+            </div>               
+        </div> 
+          <div class="product">
+             <a href="../product/men/versus time for action_versace.html" class="imgborder2"><img src="../../image/product/men/versus time for action_versace.jpg" alt="versus time for action_versace "/></a>
+            <div class="product_des">
+                <ul>
+                 	 <li><a href="../product/men/versus time for action_versace.html"><h2>versus time for action_versace</h2></a></li>
+					 <li>类型：中性香水</li>
+                	 <li>前调：柑橘、香柠檬油、枫子香、刺柏木、天竺葵</li>
+                     <li>中调：玫瑰、肉豆蔻、茉莉、紫罗兰</li>
+                     <li>后调：雪松、鸢尾草、檀香木、香子兰</li>
+                     <li>浓度:</li>
+                     <li>发行年：2003</li>
+                </ul>
+            </div>               
+        </div> 
+          <div class="product">
+             <a href="../product/women/blonde_versace.html" class="imgborder2"><img src="../../image/product/women/blonde_versace.jpg" alt="blonde_versace "/></a>
+            <div class="product_des">
+                <ul>
+                 	 <li><a href="../product/women/blonde_versace.html"><h2>blonde_versace</h2></a></li>
+					 <li>类型：中性香水</li>
+                	 <li>前调：栀子花、海桐花、佛手柑</li>
+                     <li>中调：晚香玉、水仙花、依兰树</li>
+                     <li>后调：安息香、麝香、麝猫香、檀香</li>
+                     <li>浓度:Pure Perfume</li>
+                     <li>发行年：1995</li>
+                </ul>
+            </div>               
+        </div> 
+
+</div>
+
+<!--对应css-->
+
+
+
+
+</div>
+<div id="footer">
+  <ul>
+  	<li>娄丹：原型设计、数据收集、品牌展示页面设计与实现</li>
+    <li>丁震宇：数据收集</li>
+    <li>刘天祎：原型设计、数据收集、主页及产品展示页面设计与实现</li>
+  </ul>
+  <p>&copy; 2014《Web信息架构》课程 PerfumeDaily小组 版权所有</p>
+  </div>
+</div>
+</body>
+</html> 

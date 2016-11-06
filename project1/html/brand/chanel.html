@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>香奈儿</title>
+<script src="../../js/SpryMenuBar.js" type="text/javascript"></script>
+<link href="../../css/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<link href="../../css/main.css" rel="stylesheet" />
+<link href="../../css/brand_detail.css" rel="stylesheet" />
+</head>
+<!--开始写子页面时必读：
+1. 最后确定以后，每个人都不能再改变本压缩包的文件夹命名和文件名，否则会很麻烦
+2. 对于子页面的命名，每个人都必须严格遵照本导航中的页面命名，否则会很麻烦【尤其注意品牌名录的26个文件名。。。在下方被注释掉的表格里有体现】
+3. 香水图片、海报图片、瓶身图片等我们主要展示的图片请放在image文件夹【关于图片的命名参见上交的期中报告最终版，具体是形如香水名_品牌.jpg（png，jpeg...），务必保持命名统一，后期批量生成文件的时候还要用到，否则会很麻烦】，一些图标例如导航中的小小倒三角▽，放在icon文件夹里，否则会很麻烦
+4. 本页面的宽度限制为1008px，也就是wrapper块的宽度，请把所有的内容都放在最后一个</div>里面，以保证它们都被包括在里面
+5. 最后，每个人都不能私自改动这个文件，包括css文件，如果有需求就所有人一起改好了再写其他部分，我们必须保证整个全局导航部分一致
+6. 有什么技术上的困难，咱们再一起商量，推荐w3school.com.cn-->
+<body>
+<div id="wrapper"><!--这个是在外面包裹的一层，用来限制整个页面-->
+<div id="logopic">
+	<a href="../../index.html"><img src="../../image/logo.jpg" alt="perfumedaily" /></a>
+</div>
+<div id="searchform">
+	<form method="get" id="searchf" action="search.php"><!--only if we have this sort of thing...-->
+        <fieldset class="search">
+             <input type="text" class="box" name="s" id="s" class="inputText" placeholder="搜索品牌" x-webkit-speech>
+              <button type="submit" title="SEARCH"><a>搜索</a></button>
+        </fieldset>
+	</form>
+</div>
+<div id="navi">
+<ul id="MenuBar1" class="MenuBarHorizontal"><!--这一部分使用了spry框架的下拉菜单构件，经过了自己的简单修改，应该没有什么问题-->
+  <li><a class="MenuBarItemSubmenu" href="#">香水类型</a>
+    <ul>
+      <li><a href="html/female.html">女士香水</a></li>
+      <li><a href="html/male.html">男士香水</a></li>
+      <li><a href="html/both.html">中性香水</a></li>
+      <li><a href="html/couple.html">情侣香水</a></li>
+    </ul>
+  </li>
+  <li><a href="html/brand.html">品牌名录</a></li>
+  <li><a href="html/information.html">香水资讯</a></li>
+  <li><a class="MenuBarItemSubmenu" href="html/learnabout.html">香水学堂</a>
+    <ul>
+      <li><a class="MenuBarItemSubmenu" href="html/culture.html">香水文化</a>
+        <ul>
+          <li><a href="html/history.html">香水历史</a></li>
+          <li><a href="html/note.html">香调研究</a></li>
+        </ul>
+      </li>
+      <li><a href="html/situation.html">使用场合</a></li>
+      <li><a href="html/attention.html">注意事项</a></li>
+    </ul>
+  </li>
+  <li><a class="MenuBarItemSubmenu" href="html/others.html">香水周边</a>
+  	<ul>
+    	<li><a href="html/poster.html">香水海报</a></li>
+        <li><a href="html/bottle.html">香水瓶身</a></li>
+    </ul>
+  </li>
+</ul>
+</div>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"icon/SpryMenuBarDownHover.gif", imgRight:"icon/SpryMenuBarRightHover.gif"});
+</script>
+<!--品牌索引菜单-->
+<!--到了详情界面，那么就不在是链接到自己页面的部分，而是链到其他网页部分-->
+<div class="brandmenu">
+	<ul> <!--attention！！下面是跳到另一个界面的一个部分-->
+    	<li id="brandlabel"> 品牌名录</li>
+        <li><a href="brand_index.html#brand_a">A</a></li>
+        <li><a href="#brand_b">B</a></li>
+        <li><a href="#brand_a">C</a></li>
+        <li><a href="#brand_a">D</a></li>
+        <li><a href="#brand_a">E</a></li>
+        <li><a href="#brand_a">F</a></li>
+        <li><a href="#brand_a">G</a></li>
+        <li><a href="#brand_a">H</a></li>
+        <li><a href="#brand_a">I</a></li>
+        <li><a href="#brand_a">J</a></li>
+        <li><a href="#brand_a">K</a></li>
+        <li><a href="#brand_a">L</a></li>
+        <li><a href="#brand_a">M</a></li>
+        <li><a href="#brand_a">N</a></li>
+        <li><a href="#brand_a">O</a></li>
+        <li><a href="#brand_a">P</a></li>
+        <li><a href="#brand_a">Q</a></li>
+        <li><a href="#brand_a">R</a></li>
+        <li><a href="#brand_a">S</a></li>
+        <li><a href="#brand_a">T</a></li>
+        <li><a href="#brand_a">U</a></li>
+        <li><a href="#brand_a">V</a></li>
+        <li><a href="#brand_a">W</a></li>
+        <li><a href="#brand_a">X</a></li>
+        <li><a href="#brand_a">Y</a></li>
+        <li><a href="#brand_a">Z</a></li>
+     </ul>
+     </div>
+   <div id="bread">
+        <a href="../../index.html">首页</a>
+        <span>》</span>
+        <a href="brand.html">品牌名录</a>
+       <span>》</span>
+        <a href="chanel.html">香奈儿/Chanel</a>
+</div>   
+<div class="brand_detail">
+    <div class="imgborder"><!--width\height-->
+    <img src="../../image/brand/chanel.jpg" alt="香奈儿" />
+    </div>
+    <h1> 香奈儿/Chanel </h1> <!--居中颜色字体大小-->
+    <div class="description"><!--width\margin?-->
+    	<p>创始人Gabrielle Chanel香奈儿于1913年在法国巴黎创立香奈儿品牌。香奈儿的产品种类繁多，有服装、珠宝饰品及其配件、化妆品、香水，每一种产品都闻名遐迩，特别是她的香水与时装。</p>
+<!--        <p>香奈儿在1922年推出著名的Chanel No.5香水。Chanel No.5香水瓶是一个甚具装饰艺术味道的方形玻璃瓶。Chanel No.5是史上第一瓶以设计师命名的香水。而"双C"标志也让这瓶香水成为Chanel历史上最赚钱的产品，且在恒远的时光长廊上历久不衰，至今在 Chanel的官方网站依然是重点推介产品。20世纪美国著名性感影星玛丽莲•梦露在坦露她独特性感魅力的秘密时曾说道："在床上我只用香奈尔5号"。一句看似寻常的话语，却道出了香奈尔香水调制技艺的精湛和蕴含的独特情调，也是香奈儿夫人在寻到产品独有特点的同时，用实际行动来支持这一独有特点，以此来促进香奈尔5号香水成功导入市场和健康的成长。</p>
+-->    	<p>山茶花是Chanel香水的象征与偶像，Chanel女士特别喜爱白色的花，而独具魅力的山茶花更被誉为"花之明星"。Chanel香水的神秘无处不在，并由山茶花神奇地展现出来。而格拉斯的茉莉花是世界上最昂贵的，在临近法国南部格拉斯的田野里，从5月初到10月底有大朵花瓣的格拉斯茉莉花，嫁接到小朵花瓣的药材茉莉花，是香水世界独特的发明，并区别于所有其他的茉莉花。为避免损坏花瓣和香气，必须采用人工采摘，从7月—直接持续到10月。因为茉莉花不喜欢阳光，采摘往往始于黄昏。最好的工人1小时可摘500—700克花。1公斤即1万朵花，350公斤花可生产1公斤香精，最终提取出550克精华，构成Chanelno．5的香气。正如Chanel公司调香师Jacques Polge解释说："如果与其他所有香水比较，Chanel的香料一直是不可取代的。""嗅觉是最神秘的，最人性化的要素之一"，这是coco曾经说的一名话，而格拉斯茉莉的生长就是如此人性化。</p>
+    </div>
+ <div class="func_hr"></div>
+ 
+<!--产品展示还没搞好-->
+ <div class="products">
+          <div class="product">
+             <a href="../product/women/coco_chanel.html" class="imgborder2"><img src="../../image/product/women/coco_chanel.jpg"/></a>
+            <div class="product_des">
+                <ul>
+                 	 <li><a href="../product/women/coco_chanel.html"><h2>香奈儿 coco</h2></a></li>
+                	 <li>前调：柑橘、佛手柑、葡萄柚</li>
+                     <li>中调：荔枝、意大利茉莉、玫瑰</li>
+                     <li>后调：印度广藿香、海地香根草、旁波香草、白麝香</li>
+                     <li>浓度:Eau FraÎche</li>
+                     <li>发行年：2012</li>
+                </ul>
+            </div>               
+        </div>
+</div>
+
+<!--对应css-->
+
+
+
+
+
+
+
+
+</div>
+<div id="footer">
+  <ul>
+  	<li>娄丹：原型设计、数据收集、品牌展示页面设计与实现</li>
+    <li>丁震宇：数据收集</li>
+    <li>刘天祎：原型设计、数据收集、主页及产品展示页面设计与实现</li>
+  </ul>
+  <p>&copy; 2014《Web信息架构》课程 PerfumeDaily小组 版权所有</p>
+  </div>
+</div>
+</body>
+</html>
