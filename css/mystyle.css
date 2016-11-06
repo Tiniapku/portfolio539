@@ -381,6 +381,45 @@ header h3 span{
 	height:100%;
 	max-width:250px;
 }
+/*-------------------Photo Gallery------------*/
+
+#gallery {
+	background-color: #eee;
+	padding-bottom:50px;
+	padding-top:50px;
+}
+
+#bigimg {
+	display:block;
+	line-height: 520px;
+	clear:both;
+	width:50%;
+	height:520px;
+	border:solid 5px rgb(116,140,83);
+	background-color:rgb(249,243,220);
+	margin:0 auto;
+	background-size: cover;
+	-webkit-background-size: cover;
+   	-moz-background-size: cover;
+   	-o-background-size: cover;
+   	margin-bottom:50px;
+}
+
+.previews {
+	display:table;
+}
+.thumbnails{
+	display:table-cell;
+	width:30%;
+	text-align: center;
+	margin:0 auto;
+}
+.thumbnails img {
+	display:inline-block;
+	width:50%;
+	border:solid 2px rgb(116,140,83);
+	margin:0 auto;
+}
 
 /*------------------media quiry--------------*/
 @media(max-width:600px) {
