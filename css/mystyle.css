@@ -129,12 +129,12 @@ header h3 {
 	font-size: 22px;
 	font-weight:500;
 	font-family:'PT Sans', sans-serif;
-	color: rgb(90,120,63);
+	color: #435336;
+	font-weight:bold;
 }
 
 
 header h3 span{
-	color:rgba(0,0,0,0.6);
 	display:block;
 	font-size: 0.6em;
 	padding-top:0.5em;
@@ -146,8 +146,10 @@ header h3 span{
 
 #profile h4 {
 	font-family:'Noto Sans', sans-serif;
-	color:rgb(116,140,83);
+	color:#435336;
+	font-size:19px;
 	margin-top:10px;
+	font-weight:bold;
 }
 
 #profile ul {
@@ -207,7 +209,7 @@ header h3 span{
     height: 100%;
     opacity: 0;
     /*filter: alpha(opacity=0);*/
-    background: rgb(116,140,83);
+    background: #435336;
     -webkit-transition: all ease .5s;
     transition: all ease .5s;
 }
@@ -252,25 +254,32 @@ header h3 span{
     color: #aaa;
 }
 
-#portfolio .portfolio-item .portfolio-hover .portfolio-hover-content .projname {
-	font-size : 18px;
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content .projname {
+	font-size : 20px;
+	text-transform: uppercase;
+	font-family: 'Playfair Display', serif;
+	color:rgb(249,243,220);
+	font-weight:600;
+	letter-spacing : 2px;
+}
+
+#portfolio .portfolio-item .portfolio-pic .portfolio-hover .portfolio-hover-content .projname {
+	font-size : 20px;
 	text-transform: uppercase;
 	font-family: 'Playfair Display', serif;
 	color:black;
 	font-weight:600;
 	letter-spacing : 2px;
 }
-
-
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content .intro {
-	font-size: 18px;
+	font-size: 20px;
 	color: #ffffff;
 	font-weight:400;
 	font-family:'PT Sans', sans-serif;
 }
 
 #portfolio .portfolio-item .portfolio-pic .portfolio-hover .portfolio-hover-content .intro {
-	font-size: 18px;
+	font-size: 20px;
 	color: #54683d;
 	font-weight:400;
 	font-family:'PT Sans', sans-serif;
