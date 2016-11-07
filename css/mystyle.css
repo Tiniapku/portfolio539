@@ -403,18 +403,13 @@ header h3 span{
 }
 
 #bigimg {
-	display:block;
-	line-height: 520px;
-	clear:both;
-	width:50%;
+	width:700px;
 	height:520px;
 	border:solid 5px rgb(116,140,83);
 	background-color:rgb(249,243,220);
+	background-repeat:no-repeat;
 	margin:0 auto;
-	background-size: cover;
-	-webkit-background-size: cover;
-   	-moz-background-size: cover;
-   	-o-background-size: cover;
+	background-size: 100%;
    	margin-bottom:50px;
 }
 
@@ -457,4 +452,5 @@ header h3 span{
 		background-color: #fff;
 	}
 }
+
 /*-------------------media quiry end --------------*/
